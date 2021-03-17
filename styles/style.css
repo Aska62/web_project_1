@@ -182,13 +182,6 @@
   font-weight: normal;
 }
 
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 .feynman {
   height: 790px;
   width: 100%;
@@ -287,6 +280,7 @@
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 80px;
+  color: white;
 }
 
 .table__heading_theme_dark {
