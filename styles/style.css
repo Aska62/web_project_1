@@ -51,7 +51,7 @@
   z-index: 2;
   line-height: 25px;
   font-size: 18px;
-  font-weight: 40;
+  font-weight: normal;
 }
 
 .header__link {
@@ -90,7 +90,6 @@
 
 .two-columns {
   width: 80%;
-  min-width: 784px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -102,7 +101,7 @@
   margin-top: 0;
   line-height: 1.2;
   font-size: 18px;
-  font-weight: 40;
+  font-weight: normal;
   color: #2f80ed;
 }
 
@@ -116,14 +115,14 @@
   align-content: flex-start;
   line-height: 34px;
   font-size: 24px;
-  font-weight: 40;
+  font-weight: normal;
 }
 
 .two-columns__paragraph {
   margin: 0 0 30px 0;
 }
 
-.two-columns__paragraph:nth-of-type(3n) {
+.two-columns__paragraph:last-of-type {
   margin-bottom: 0;
 }
 
@@ -154,12 +153,13 @@
   margin: 0;
   line-height: 34px;
   font-size: 24px;
-  font-weight: 40;
+  font-weight: normal;
 }
 
 .table {
   width: 1100px;
-  margin-bottom: 100px;
+  margin: 0 0 100px 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -175,6 +175,12 @@
   font-weight: bold;
 }
 
+.table__heading {
+  line-height: 1.15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .table__text {
   margin-top: 20px;
   line-height: 1.2;
@@ -183,7 +189,7 @@
 }
 
 .feynman {
-  height: 790px;
+  min-height: 790px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -205,7 +211,8 @@
 .feynman__title {
   width: 100%;
   max-width: 775px;
-  margin: 100px auto 70px auto;
+  margin: 0 auto 70px auto;
+  padding-top: 100px;
   text-align: center;
   z-index: 1;
   line-height: 1.15;
@@ -217,7 +224,7 @@
   z-index: 1;
   line-height: 51px;
   font-size: 36px;
-  font-weight: 40;
+  font-weight: normal;
 }
 
 .feynman__link {
@@ -226,7 +233,7 @@
   bottom: 395px;
   line-height: 51px;
   font-size: 36px;
-  font-weight: 40;
+  font-weight: normal;
   color: #2f80ed;
   text-decoration: none;
 }
@@ -240,62 +247,43 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  z-index: -2;
+  z-index: 0;
   overflow: hidden;
 }
 
 .section-title_theme_dark {
-  width: 60%;
-  margin: 90px auto 20px auto;
-  text-align: center;
-  z-index: 2;
+  margin-top: 90px;
+  z-index: 3;
   line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
   color: white;
 }
 
 .section-subtitle_theme_dark {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 400;
   color: white;
 }
 
 .table_theme_dark {
-  width: 1100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0 auto 90px auto;
-  z-index: 1;
-  list-style-type: none;
+  z-index: 2;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   height: max-content;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 80px;
   color: white;
 }
 
 .table__heading_theme_dark {
   width: 100%;
   margin-bottom: 20px;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .table__text_theme_dark {
   margin: 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: 40;
 }
 
 .kaufman__triangle {
@@ -306,7 +294,7 @@
   top: 0;
   background-image: url("../images/kaufman-triangle.svg");
   background-size: 877px 877px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .footer {
@@ -328,10 +316,13 @@
   margin: 60px auto 40px auto;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
 }
 
@@ -346,13 +337,11 @@
   line-height: 25px;
   vertical-align: 0;
   font-size: 18px;
-  font-weight: 40;
+  font-weight: normal;
   color: white;
 }
 
 .footer__column_content_info, .footer__column_contnet_social {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -371,15 +360,17 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.footer__column-link {
+  text-decoration: none;
   color: white;
 }
 
-.footer__social-box {
+.footer__column-link_social {
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-decoration: none;
-  color: white;
 }
 
 .footer__social-icon {
