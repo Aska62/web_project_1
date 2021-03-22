@@ -259,17 +259,14 @@
 .section-title_theme_dark {
   line-height: 1.15;
   color: white;
-  z-index: 4;
 }
 
 .section-subtitle_theme_dark {
   color: white;
-  z-index: 2;
 }
 
 .table_theme_dark {
   margin: 0;
-  z-index: 4;
 }
 
 .table__cell_theme_dark {
@@ -299,7 +296,7 @@
   top: 0;
   background-image: url("../images/kaufman-triangle.svg");
   background-size: 877px 877px;
-  z-index: 3;
+  z-index: -1;
 }
 
 .footer {
