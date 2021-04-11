@@ -1,13 +1,8 @@
+@import url('./_content/footer__column_content_copyright.css');
+@import url('./_content/footer__column_content_social.css');
+@import url('./_content/footer__column_content_info.css');
+
 .footer__column {
   display: flex;
   flex-direction: column;
-}
-
-.footer__column_content_copyright {
-  flex-basis: 711px;
-  justify-content: space-between;
-}
-
-.footer__column_content_info, .footer__column_contnet_social {
-  justify-content: flex-start;
 }

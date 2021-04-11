@@ -4,7 +4,6 @@
 @import url('./__description/cards__description.css');
 
 .cards {
-  height: fit-content;
   width: 920px;
   margin: 0 auto;
   padding: 0;
